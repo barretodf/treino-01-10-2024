@@ -1,0 +1,71 @@
+*,
+body,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /*quando diminui a tela, o menu vai pra baixo da logo*/
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: blue;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------------------------- */
+/* CSS FLEXBOX 1*/
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*imagens responsivas*/
+img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+/* posicionando os itens um ao lado do outro */
+/*Esse flex é o container pai que encapsula tudo no html*/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; /*agora ele tem que quebrar (isso vem escrito depois do flex > div - flex)*/
+    max-width: 1080px;/*Se quiser delimitar o tamanho do box pai no final*/
+    margin: 0 auto;/*para centralizar no final*/
+}
+
+/* 1 para se expandir, 1 ficar menor, 200px base(se ele não conseguir manter 200 ele quebra) */
+
+.flex div {
+    flex: 1 1 200px; /*não mudou ainda*/
+    /*tem que indicar lá lo flex que ele pode quebrar*/
+    margin: 10px;/*no final*/
+}
